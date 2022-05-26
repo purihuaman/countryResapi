@@ -1,0 +1,20 @@
+.toggle {
+	transition: box-shadow 0.5s;
+	border-radius: var(--bradius);
+	box-shadow: var(--boxShadow);
+
+	&__content {
+		pointer-events: initial;
+		display: inline-flex;
+		gap: var(--s-gap);
+		cursor: pointer;
+		padding: var(--s-padding);
+	}
+
+	&__icon,
+	&__text {
+		font-size: var(--detailsPage);
+		pointer-events: none;
+		white-space: nowrap;
+	}
+}

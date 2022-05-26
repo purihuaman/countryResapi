@@ -1,0 +1,26 @@
+template#template
+	article.flag(data-flag="flag")
+		.flag__container-img
+			img(
+				src="./ad.svg"
+				alt=""
+				data-picture="picture"
+				class="flag__image"
+			)
+
+		.flag__body
+			h3.flag__title(data-country="country") Germany
+
+			p.flag__text
+				b.flag__subtitle Population: 
+				span(data-population="population") 81,770,900
+
+			p.flag__text
+				b.flag__subtitle Region: 
+				span(data-region="region") Europe
+			
+			p.flag__text
+				b.flag__subtitle Capital: 
+				span(data-capital="capital") Berlin
+		.flag__footer(data-footer='flag-footer')
+	

@@ -1,0 +1,35 @@
+:root {
+	--main-font: 'Nunito Sans', -apple-system, BlinkMacSystemFont, Segoe UI,
+		Roboto, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+	--fweight-bold: 800;
+	--fweight-semibold: 600;
+	--fweight-normal: 300;
+
+	--homeItems: 14px;
+	--detailsPage: 16px;
+
+	--first-grey: hsl(0, 0%, 98%);
+	--second-grey: hsl(0, 0%, 100%);
+	--thrid-grey: hsl(0, 0%, 52%);
+	--text-color: hsl(200, 15%, 8%);
+
+	--dark-first: hsl(207, 26%, 17%);
+	--dark-second: hsl(209, 23%, 22%);
+}
+
+// Light
+:root {
+	// --first-bg: var(--first-grey);
+	// --second-bg: var(--second-grey);
+	// --thrid-bg: var(--thrid-grey);
+	// --color-text: var(--text-color);
+}
+
+// Dark
+:root {
+	--first-bg: var(--dark-first);
+	--second-bg: var(--dark-second);
+	--thrid-bg: var(--thrid-grey);
+	--color-text: var(--second-grey);
+}

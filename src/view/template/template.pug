@@ -1,0 +1,39 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Country API
+		link(rel="shortcut icon", href="assets/icons/flag.svg", type="image/x-icon")
+		<!-- Fonts -->
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+			rel="stylesheet"
+		)
+		<!-- Icons -->
+		link(
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		)
+
+	body.dark
+		.home
+			header.header
+				.content
+					block header
+
+			main.main 
+				.content 
+					block nav 
+					block flags
+					block details
+
+			footer.footer
+				.content
+					block footer
+
+			include ../template/flag-template
+

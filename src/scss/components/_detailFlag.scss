@@ -1,0 +1,10 @@
+.detailsFlag {
+	background-color: green;
+	// display: none;
+
+	// transform: translateX(-10vw);
+
+	&.active {
+		transform: translateX(0);
+	}
+}

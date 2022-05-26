@@ -1,0 +1,31 @@
+:root {
+	--boxShadow: 5px 6px 13px -3px rgba(0, 0, 0, 0.2);
+
+	--transition: background-color 0.5s, color 0.3s;
+	--bradius: 0.28rem;
+
+	--s-padding: 0.5rem;
+	--n-padding: 1rem;
+	--l-padding: 1.5rem;
+	--x-padding: 2rem;
+
+	--s-margin: 0.5rem;
+	--n-margin: 1rem;
+	--l-margin: 1.5rem;
+	--x-margin: 2rem;
+
+	--s-gap: 0.5rem;
+	--n-gap: 1rem;
+	--l-gap: 1.5rem;
+	--x-gap: 2rem;
+	--screen: 1440px;
+}
+
+// ==> Breakpoint <==
+$breakpoints: (
+	mobile: 375px,
+	tablets: 768px,
+	laptops: 992px,
+	desktop: 1200px,
+	screen: 1440px,
+);

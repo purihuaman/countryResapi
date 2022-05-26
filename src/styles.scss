@@ -1,0 +1,30 @@
+// ==> Config <==
+@import './scss/config/vars';
+@import './scss/config/mixins';
+
+// ==> Base <==
+@import './scss/base/normalize';
+@import './scss/base/my-reset';
+@import './scss/base/base';
+
+// ==> Layout <==
+@import './scss/layout/home';
+@import './scss/layout/header';
+@import './scss/layout/main';
+@import './scss/layout/footer';
+@import './scss/layout/content';
+
+// ==> Theme <==
+@import './scss/theme/theme';
+
+// ==> Components <==
+@import './scss/components/toggleTheme';
+@import './scss/components/navegationSearch';
+@import './scss/components/flags';
+@import './scss/components/cardFlag';
+@import './scss/components/detailFlag';
+
+// ==> Helpers <==
+@import './scss/helpers/scroll';
+
+// ==> Utils <==

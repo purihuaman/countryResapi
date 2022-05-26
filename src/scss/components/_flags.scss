@@ -1,0 +1,15 @@
+.flags {
+	display: none;
+	padding: var(--x-padding) 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	grid-auto-columns: repeat(auto-fill, minmax(220px, min-content));
+	grid-auto-rows: minmax(300px, min-content);
+	gap: var(--l-gap);
+	justify-content: start;
+	// background-color: purple;
+
+	@include querys(laptops) {
+		gap: var(--x-gap);
+	}
+}

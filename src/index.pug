@@ -1,0 +1,107 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Country API
+		link(rel="shortcut icon", href="assets/icons/flag.svg", type="image/x-icon")
+		<!-- Fonts -->
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+			rel="stylesheet"
+		)
+		<!-- Icons -->
+		link(
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		)
+
+
+	body.dark
+		.home
+			header.header
+				.content
+					.header__content
+						h1 Where in the world?
+
+						.toggle
+							#toggleTheme.toggle__content
+								i#toggleIcon.ri-moon-fill.toggle__icon
+								#toggleText.toggle__text Dark Mode
+
+			main.main
+				.content
+					nav.navegation
+						.navegation__search
+							form#formFilter.navegation__form
+								i.ri-search-line
+								input(
+									type="search"
+									name="searchCountry"
+									id="searchCountry"
+									placeholder="Search for a country..."
+									class="navegation__input"
+								)
+								
+
+						select(
+							name="filterCountry"
+							id="filterCountry"
+							placeholder="Filter by Región"
+							class="navegation__select"
+						)
+							option(value="") Filter by Región
+							option(value="") Todos
+							option(value="Africa") Africa
+							option(value="Antarctic") Antarctic
+							option(value="Americas") Americas
+							option(value="Asia") Asia
+							option(value="Europe") Europe
+							option(value="Oceania") Oceania
+
+					section.panels
+						.panels__item
+							section#flags.flags
+								<!-- Flags -->
+
+						.panels__item
+							.detailsFlag
+								p detalles
+									<!-- Details flag -->
+
+						template#template
+							a(href="" data-link='') 
+								article.flag(data-flag="flag")
+									.flag__container-img
+										img(
+											src="./ad.svg"
+											alt=""
+											data-picture="picture"
+											class="flag__image"
+										)
+
+									.flag__body
+									h3.flag__title(data-country="country") Germany
+
+									p.flag__text
+										b.flag__subtitle Population: 
+										span(data-population="population") 81,770,900
+
+									p.flag__text
+										b.flag__subtitle Region: 
+										span(data-region="region") Europe
+									
+									p.flag__text
+										b.flag__subtitle Capital: 
+										span(data-capital="capital") Berlin
+
+			footer.footer
+				.content
+					.footer__content
+						p(class="footer__text") Desarrollado por 
+							b(class='footer__bold')
+								a(href="https://purihuamanp.netlify.app/" title='Pedro Purihuaman') Pedro Purihuaman
+							| &nbsp;- &copy; 2021

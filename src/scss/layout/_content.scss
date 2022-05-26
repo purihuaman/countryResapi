@@ -1,0 +1,24 @@
+.content {
+	max-width: var(--screen);
+	margin-left: auto;
+	margin-right: auto;
+	// min-height: 100%;
+}
+
+.panels {
+	position: relative;
+	min-height: 100vh;
+	background-color: red;
+	display: flex;
+
+	&__item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		&:last-child {
+			transform: translateX(-100vw);
+		}
+	}
+}

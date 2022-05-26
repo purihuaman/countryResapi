@@ -1,0 +1,27 @@
+nav.navegation
+	.navegation__search
+		form#formFilter.navegation__form
+			i.ri-search-line
+			input(
+				type="search"
+				name="searchCountry"
+				id="searchCountry"
+				placeholder="Search for a country..."
+				class="navegation__input"
+			)
+			
+
+	select(
+		name="filterCountry"
+		id="filterCountry"
+		placeholder="Filter by Región"
+		class="navegation__select"
+	)
+		option(value="") Filter by Región
+		option(value="") Todos
+		option(value="Africa") Africa
+		option(value="Antarctic") Antarctic
+		option(value="Americas") Americas
+		option(value="Asia") Asia
+		option(value="Europe") Europe
+		option(value="Oceania") Oceania

@@ -1,0 +1,68 @@
+.navegation {
+	padding-top: var(--n-padding);
+	display: flex;
+	flex-direction: column;
+	gap: var(--x-gap);
+
+	@include querys(laptops) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__search {
+		@include querys(laptops) {
+			width: 30%;
+		}
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+		gap: var(--n-gap);
+		padding: 0 var(--l-padding);
+		transition: var(--transition);
+		background-color: var(--second-bg);
+		border-radius: var(--bradius);
+		box-shadow: var(--boxShadow);
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		border: none;
+		outline: none;
+		padding: var(--l-padding);
+		transition: var(--transition);
+		color: var(--color-text);
+		background-color: var(--second-bg);
+
+		&::placeholder {
+			color: var(--color-text);
+		}
+	}
+
+	&__select {
+		width: 70%;
+		border: none;
+		outline: none;
+		padding: var(--l-padding);
+		transition: var(--transition);
+		background-color: var(--second-bg);
+		border-radius: var(--bradius);
+		color: var(--color-text);
+		box-shadow: var(--boxShadow);
+
+		& option {
+			background-color: var(--second-bg);
+			display: block;
+			outline: none;
+			border: none;
+			padding: var(--n-padding);
+		}
+
+		@include querys(laptops) {
+			width: 25%;
+		}
+	}
+}
