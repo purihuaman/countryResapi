@@ -31,13 +31,12 @@ export const showCountries = (objContries) => {
 	const countries = objContries;
 
 	countries.forEach((country) => {
-		// a(href="./details.html" target='_blank').flag__link Detalles
-		// template;
-		// .querySelector('[data-link]')
-		// .setAttribute('data-link', country?.cca3.toLowerCase());
-		// template.querySelector(
-		// 	'[data-link]'
-		// ).href = `${URL}/name/${country.name.common.toLowerCase()}`;
+		template
+			.querySelector('[data-link]')
+			.setAttribute('data-link', country?.cca3.toLowerCase());
+		template.querySelector(
+			'[data-link]'
+		).href = `${URL}/name/${country.name.common.toLowerCase()}`;
 		template.querySelector('[data-flag]').dataset.cca3 =
 			country?.cca3.toLowerCase();
 		template.querySelector('[data-picture]').src = country?.flags?.png;
