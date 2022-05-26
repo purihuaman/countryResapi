@@ -60,7 +60,8 @@
 			margin-top: auto;
 			padding-top: var(--s-padding);
 			padding-bottom: var(--x-padding);
-			pointer-events: visible;
+			pointer-events: fill;
+			cursor: pointer;
 
 			&:hover {
 				text-decoration: underline;
