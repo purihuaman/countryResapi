@@ -30,12 +30,6 @@ export const showCountries = (objContries) => {
 
 	const countries = objContries;
 
-	const linkFlagDetails = document.createElement('a');
-	linkFlagDetails.href = '/details.html';
-	linkFlagDetails.href = 'https://www.google.com';
-	linkFlagDetails.textContent = 'Detalles';
-	linkFlagDetails.setAttribute('target', '_blank');
-
 	countries.forEach((country) => {
 		// a(href="./details.html" target='_blank').flag__link Detalles
 		// template;
@@ -55,9 +49,6 @@ export const showCountries = (objContries) => {
 		template.querySelector('[data-region]').textContent = country?.region;
 		template.querySelector('[data-capital]').textContent =
 			country?.capital?.[0];
-		template
-			.querySelector("[data-footer='flag-footer']")
-			.append(linkFlagDetails);
 
 		const cloneTemplate = document.importNode(template, true);
 		fragment.appendChild(cloneTemplate);

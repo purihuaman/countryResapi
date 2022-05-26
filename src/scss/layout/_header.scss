@@ -1,11 +1,11 @@
 .header {
-	// width: 100%;
 	padding: var(--n-padding);
 	transition: var(--transition);
 	background-color: var(--second-bg);
 	box-shadow: var(--boxShadow);
 	position: sticky;
 	top: 0;
+	left: 0;
 
 	&__content {
 		display: flex;
