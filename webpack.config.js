@@ -43,11 +43,6 @@ module.exports = {
 			filename: './index.html',
 			scriptLoading: 'blocking',
 		}),
-		new HtmlWebpackPlugin({
-			template: './src/view/pages/details.pug',
-			filename: './details.html',
-			scriptLoading: 'blocking',
-		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/styles.css',
 		}),
